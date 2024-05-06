@@ -16,15 +16,38 @@
 onclick="document.getElementById('hello').innerHTML='javascript'">click to me</button>
 <p id="hello"></p>
 
-<p id="world"></p>
+<p id="world"> id defines the elements</p>
+<p>innerHTML defines the content</p>
 <script>
     console.log('hellow javascript');
-    console.log('hows the day');
-    alert('kaha h');
+    console.log('hows the day');//for debuging purpose
+    window.alert('kaha h');//it gives the alert message in windows
     document.getElementById('world').innerHTML='hello';
+    document.write(100+100);//for testing purposes,it is convenient to use
+
     
+</script>
+<button type="button"
+onclick="window.print()"
+>print this page</button>
+
+<script>
+let x,y,z;/*statement 1(javascript statement is a block of code, in a programming language this programming instruction are called statement,
+    javascript statement are composed of  values, operators,expression, keywords,and comments)*/
+x=5; // statement 2
+y=10; //statement 3
+z=x+y; //statement 4
+document.write('sum of two number is :',z);
+
 </script>
 
 
+<!--javascript can write in defferent way
+Writing into HTML elements,using innerHTML.
+Writing into the HTMLoutput using document.write().
+Writing into an alert box,using window.alert().
+Writing into the browser console,using console.log().
+-->
+
 </body>
-</html>;
+</html>

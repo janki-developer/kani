@@ -196,10 +196,23 @@ myFunction();
 ?><br>
 
 <?php 
-function merofunction($fname, $lname) { //pending
-    return $lname;
+function merofunction($fname) { // pass by vallue(value not change)
+    $fname++;
 }
-?>
+$number=10;
+merofunction($number);
+echo $number;
+?><br>
+
+<?php // pass by refreences 
+function merifunction(&$num){
+    $num++;
+}
+ $string=20;
+ merifunction($string);
+ echo $string;
+?><br>
+
 <!--array stores multiple values in one single variable, we can acces the value by reffering the inder number and name-->
 <!--three type of array are tere 1.indexed arrays 2.associative array 3.multidemensional array-->
 
@@ -238,12 +251,38 @@ var_dump($dal);
 ?>
 
 
+<?php //multidemenssional array
 
 
-
-<?php //multidemenssional array pending 
-
-?>
+?><br>
 
 <!--php superGLOBAL varable $_GLOBALS, $_SERVER, $_REQUEST, $_POST, $_GET, $_FILES, $_ENV, $_COOKIE, $_SESSION-->
 
+<?php //php date function
+echo date('l'); //it gives the today date
+echo date('y.m.d');
+echo date('h:i:s');
+?><br>
+
+<?php 
+echo readfile("getmethod.php"); //open and read the file
+?><br>
+
+<?php //open and write file,until end of file
+$myfile=fopen('postmethod.php', 'r');
+while(!feof($myfile)){
+    echo fgetc($myfile);
+}
+?><br>
+
+<?php // cookie 
+setcookie("username", "john", time() + (562*36), "/"); //initialize the cookie
+echo $_COOKIE["username"];                             //output of the cookie
+?><br>
+
+<?php  //session in php
+session_start();
+//$favcolor;
+$_SESSION["favcolor"]="red";  //favcolor is variable
+echo $_SESSION["favcolor"];   //output of the session
+?><br>

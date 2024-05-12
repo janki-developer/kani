@@ -186,5 +186,64 @@ if($t==$s){
 }else{
      echo "3";
 }
+?><br>
+
+<?php 
+function myFunction(){        //a function is a block of code written in a program to perform some specific task(there are two type of function 1.build in function(var_dump(),fopen(),print_r(),gettype()) 2.user defined funtion)
+    echo "my first function";
+}
+myFunction();
+?><br>
+
+<?php 
+function merofunction($fname, $lname) { //pending
+    return $lname;
+}
 ?>
+<!--array stores multiple values in one single variable, we can acces the value by reffering the inder number and name-->
+<!--three type of array are tere 1.indexed arrays 2.associative array 3.multidemensional array-->
+
+<?php        // to countnumber of iteam on array in php, array index start with with zero,array can be a object andfunction
+             //array can be 1.create array 2.access array 3.update array 4.add arrat iteam 5.remove array iteam 6.sort array
+
+$fruit=array("banana", "mango", "orange","apple"); //create array
+echo count($fruit); // by acces by name/associative array , count()is a function
+
+echo ($fruit[3]);   // by index number/indexed array
+var_dump($fruit);  // to know the type of php variable
+?><br>
+
+<?php   //update the array
+$cars=array("mercedies","ford","suzuki","inova");
+$cars[3]="bmw";
+var_dump($cars);
+?><br>
+
+<?php //add array iteam
+$cloths=array("shirt","pant","tshirt","kurti");
+$cloths[]="topi";
+var_dump($cloths);
+?><br>
+
+<?php //remove the array iteam
+ $family=array("ama","baa","dai","kai", "bajaei");
+ array_splice($family, 3);
+ var_dump($family);
+?><br>
+
+<?php  //sort array
+$dal=array("gat","masuro","chana","mash");
+sort($dal);
+var_dump($dal);
+?>
+
+
+
+
+
+<?php //multidemenssional array pending 
+
+?>
+
+<!--php superGLOBAL varable $_GLOBALS, $_SERVER, $_REQUEST, $_POST, $_GET, $_FILES, $_ENV, $_COOKIE, $_SESSION-->
 

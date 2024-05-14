@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <p id='kutta'></p>
   <!--js date and time-->
     <button type="button"
          ondblclick="document.getElementById('demo').innerHTML= Date()">click me</button>
@@ -56,15 +57,47 @@ javascript expression(an expression is a combination of values,variables and ope
 </script>
 <script>// string expression
     document.write("mynameis" + "" + "janki");
-</script>
+</script><br>
 
-<!--we can variable in four way auto,var,let,const(can use in array and object)-->
+<!--we can declare variable in four way auto,var,let,const(can use in array and object)-->
 <script>
     const price1 = 5;
     const price2 = 10;
     let c = price1 + price2;
     Document.getElementById("kita").innerHTML="sum of two different variable:" + c;
-</script><!--javascript operators 1.arithmetic operators 2.assignment 3.comparision 4.string 5.logical 6.bitwise 7.ternary-->
+</script><br><!--javascript operators 1.arithmetic operators 2.assignment 3.comparision 4.string 5.logical 6.bitwise 7.ternary-->
 <p id="kita"></p>
+
+<!--data type in java script 1.primitive data(string,number,boolean,null,undifined,symbol, bigint 2.non-primitive(object, array))-->
+<!--scope in js 1.global scope 2.local scop 3.block scope-->
+<!--js function-->
+<script>
+function kani(p1, p2) {
+    return p1 * p2; 
+}
+let result = kani(4, 5);
+document.getElementById('kutta').innerHTML=result;
+</script>
+
+<!--array in js (type of array in js (number array ,string array,array of array(2d array)))-->
+<p id="arr"></p>
+<script>
+    const cars=["fort", 
+    "suzuki", 
+    "inova"
+];
+cars[1]="mercedies";
+//let size = cars.length;
+    document.getElementById('arr').innerHTML=cars;
+</script>
+<!--object in js-->
+<script>
+    const tell = {fname:"janki", lname:"kami", age: 23};
+    Document.getElementById('cina').innerHTML = tell.lname;
+</script>
+<p id="cina"></p>
+
+
+
 </body>
 </html>

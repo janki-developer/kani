@@ -1,18 +1,23 @@
 <!--php keywords are not case sensative like(if,else,while,echo),classes,function,user-difined function are not cs-->
 <!--php variable are start with character and underscore(not by number)(it contains alpha numaric character and _(A-z,0-9,and-))-->
 <!--all variable name are case sencative-->
-<!--php variable are case sensative in php-->
 <!--php 8.2.12 is latest version of php(php 7 supports new operator <=>)-->
 <!-- php statement end with ;-->
 <!--php variable scope 1.local 2.global 3.static-->
-
-
 <!--variable declaration in php-->
-<?php 
+<!-- short cut comment key is (ctrl+forwaord slash "/") -->
+<!-- operator in php(1.Arithametic operator
+                     2.Assignment operator 
+                     3. Comparision operator
+                     4.Increatment operator/decreatment operator
+                     5.Logical operator
+                     6.String operator
+                     7.Array operator
+                     8.Conditional assignment operator) -->
 
+<?php 
 $a=20;
 $b=30;
-
 $c=$a+$b;
 echo "Sum:",$c;
 ?><br>
@@ -59,13 +64,13 @@ switch($color){
             echo "welcome";
             break;
             default:
-            echo "neigther";
-
+            echo "neigther"; 
 }
+
 ?><br>
 <!--while loop. it at stating first check the condition if its true then it enters the loop and executes the block of code(entry control loop)-->
 <!--four type of loop in php for,while , do while, foreach-->
-<?php 
+<?php  //while loop
 $i=1;
 while($i <6){
 echo "$i <br>";
@@ -84,7 +89,8 @@ do{
 ?><br>
 
 <!--for loop-->
-<?php 
+<?php
+ $i=0;
 for($i=0; $i<20; $i++){
     echo "$i";
 }
